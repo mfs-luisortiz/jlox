@@ -34,3 +34,9 @@ application {
     // Define the main class for the application.
     mainClass = 'com.craftinginterpreters.lox.App'
 }
+
+jar {
+  manifest {
+    attributes('Main-class': 'com.craftinginterpreters.lox.App')
+  }
+}
